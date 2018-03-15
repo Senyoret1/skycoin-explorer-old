@@ -43,6 +43,10 @@ const ROUTES = [
     component: AddressDetailComponent
   },
   {
+    path: 'app/address/:address/:page',
+    component: AddressDetailComponent
+  },
+  {
     path: 'app/transaction/:txid',
     component: TransactionDetailComponent
   },

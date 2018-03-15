@@ -13,6 +13,9 @@ export class AddressDetailComponent implements OnInit {
   address: string;
   balance: number;
   transactions: any[];
+  pageTransactions: any[];
+  pageIndex = 0;
+  pageSize = 10;
   loadingMsg = "Loading...";
   longErrorMsg: string;
 
@@ -26,9 +29,15 @@ export class AddressDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.switchMap((params: Params) => {
       this.address = params['address'];
+      if (params['page'])
+        this.pageIndex = parseInt(params['page'], 10) - 1;
+      
       return this.explorer.getTransactions(this.address);
     }).subscribe(
-      transactions => this.transactions = transactions,
+      transactions => {
+        this.transactions = transactions;
+        this.updateTransactions();
+      },
       error => {
         if (error.status >= 400 && error.status < 500) {
           this.loadingMsg = "Loading error";
@@ -36,11 +45,22 @@ export class AddressDetailComponent implements OnInit {
         } else {
           this.loadingMsg = "Loading error";
           this.longErrorMsg = "Error loading data, try again later...";
+          alert(error);
         }
       }
     );
 
     this.route.params.switchMap((params: Params) => this.api.getCurrentBalance(params['address']))
       .subscribe(response => this.balance = response.head_outputs.reduce((a, b) => a + parseFloat(b.coins), 0));
+  }
+
+  updateTransactions() {
+    if (this.pageIndex > this.transactions.length / this.pageSize)
+      this.pageIndex = Math.floor(this.transactions.length / this.pageSize);
+
+    this.pageTransactions = [];
+    for (let i=this.pageIndex * this.pageSize; i<(this.pageIndex+1)*this.pageSize && i<this.transactions.length; i++) {
+      this.pageTransactions.push(this.transactions[i]);
+    }
   }
 }

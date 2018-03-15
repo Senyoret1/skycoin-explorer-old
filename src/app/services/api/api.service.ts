@@ -11,7 +11,7 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class ApiService {
 
-  private url = '/api/';
+  private url = 'http://explorer.skycoin.net/api/';
 
   constructor(
     private http: Http
