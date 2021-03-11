@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.19.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -17,4 +17,98 @@ patch:
         patched: '2018-06-26T08:10:05.074Z'
     - '@angular-devkit/build-angular > node-sass > request > tunnel-agent':
         patched: '2018-06-26T08:10:05.074Z'
+  'npm:hoek:20180212':
+    - '@angular-devkit/build-angular > node-sass > node-gyp > request > hawk > hoek':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > log4js > loggly > request > hawk > hoek:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > node-sass > node-gyp > request > hawk > boom > hoek':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > log4js > loggly > request > hawk > boom > hoek:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > node-sass > node-gyp > request > hawk > sntp > hoek':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > log4js > loggly > request > hawk > sntp > hoek:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > node-sass > node-gyp > request > hawk > cryptiles > boom > hoek':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > log4js > loggly > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-03-11T21:34:04.948Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - protractor > browserstack > https-proxy-agent:
+        patched: '2021-03-11T21:34:04.948Z'
+    - protractor > saucelabs > https-proxy-agent:
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > log4js > mailgun-js > proxy-agent > https-proxy-agent:
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > log4js > mailgun-js > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2021-03-11T21:34:04.948Z'
+  SNYK-JS-LODASH-567746:
+    - '@angular-devkit/build-angular > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > html-webpack-plugin > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > stats-webpack-plugin > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > webpack-merge > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > combine-lists > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > node-sass > sass-graph > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > webpack-dev-server > http-proxy-middleware > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > log4js > hipchat-notifier > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > async > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-types > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-generator > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > babel-generator > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-traverse > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > babel-traverse > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-template > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > babel-template > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > node-sass > gaze > globule > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > log4js > mailgun-js > async > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma > log4js > slack-node > requestretry > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-generator > babel-types > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > babel-generator > babel-types > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-traverse > babel-types > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-template > babel-types > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > babel-template > babel-types > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-template > babel-traverse > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash':
+        patched: '2021-03-11T21:34:04.948Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2021-03-11T21:34:04.948Z'
+  SNYK-JS-TREEKILL-536781:
+    - '@angular-devkit/build-angular > tree-kill':
+        patched: '2021-03-11T21:34:04.948Z'
+    - '@angular-devkit/build-angular > @ngtools/webpack > tree-kill':
+        patched: '2021-03-11T21:34:04.948Z'
 patched: '2018-04-18T04:53:49.215Z'
