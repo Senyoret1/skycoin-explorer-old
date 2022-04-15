@@ -32,7 +32,7 @@
     "moment": "^2.21.0",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14",
-    "snyk": "^1.85.0",
+    "snyk": "^1.465.0",
     "bignumber.js": "^7.2.1"
   },
   "devDependencies": {
