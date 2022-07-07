@@ -29,7 +29,7 @@
     "@ngx-translate/http-loader": "^2.0.1",
     "core-js": "^2.4.1",
     "disable-scroll": "^0.4.0",
-    "moment": "^2.21.0",
+    "moment": "^2.29.4",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14",
     "snyk": "^1.85.0",
